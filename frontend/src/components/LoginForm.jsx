@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { IoPersonCircleSharp } from "react-icons/io5";
+import './LoginForm.css'
+
 //import React, { useState } from 'react';
 
 const LoginForm = ({ onLogin }) => {
@@ -11,31 +14,49 @@ const LoginForm = ({ onLogin }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-      <div>
-        <label className="block mb-2">Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="w-full p-2 border rounded"
-        />
+    <>
+      <div className="max-w-md w-[40vw] mt-[15vh] bg-gradient-to-b from-[#cc99c2] to-[#630099] rounded-xl shadow-2xl overflow-hidden p-8 space-y-8 mx-auto" >
+
+        <h2 className="text-center text-4xl font-extrabold text-white"> Welcome </h2>
+        <span href="#" className="flex justify-center text-white rounded-full">
+          {" "} <IoPersonCircleSharp size={100} />{" "}
+        </span>
+
+        <p className="text-center text-gray-200 mt-0">
+          Sign in to your account
+        </p>
+        <form method="POST" action="#" className="space-y-6">
+          <div className="relative">
+            <input placeholder="john@example.com" className="peer loginInput" required="" id="email" name="email" type="email" />
+            <label
+              className="loginLabel peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-5 peer-focus:text-white peer-focus:text-md"
+              for="email"
+            > Email address </label>
+          </div>
+          <div className="relative">
+            <input
+              placeholder="Password"
+              className="peer h-10 w-full border-b-2 border-gray-300 text-black bg-white placeholder-transparent focus:outline-none focus:border-gray-500"
+              required=""
+              id="password"
+              name="password"
+              type="password"
+            />
+            <label
+              className="loginLabel peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-5 peer-focus:text-white peer-focus:text-md"
+              for="password">
+              Password </label>
+          </div>
+          <button type="button" className='btn btn-primary w-[50%]'>
+            Sign In
+          </button>
+        </form>
+        <div className="text-center text-gray-300" >
+          <p>Don't have an account?</p>
+          <a className="text-white hover:underline" href="#">Create new account</a>
+        </div>
       </div>
-      <div>
-        <label className="block mb-2">Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          className="w-full p-2 border rounded"
-        />
-      </div>
-      <button type="submit" className="p-2 bg-blue-500 text-white rounded">
-        Login
-      </button>
-    </form>
+    </>
   );
 };
 

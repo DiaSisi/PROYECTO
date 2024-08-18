@@ -1,0 +1,8 @@
+
+.loginInput {
+    @apply h-10 w-full border-b-2 border-gray-300 text-black bg-white placeholder-transparent focus:outline-none focus:border-gray-500
+ }
+
+ .loginLabel {
+    @apply absolute left-0 -top-3.5 text-gray-500 text-sm transition-all 
+ }

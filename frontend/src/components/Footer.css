@@ -1,0 +1,13 @@
+footer {
+    background-image: url('../assets/img/Background_footer.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-size: cover; */
+    /* background-position:absolute; top:0; bottom: 0; */
+}
+
+.footer-text-explore {
+    @apply text-[#5c5c5cad] hover:text-dark-purple visited:text-[#5c5c5cad] font-bold
+}
+
+/* <div class="absolute w-60 h-60 rounded-xl bg-purple-300 -top-5 -left-16 z-0 transform rotate-45 hidden md:block"></div> */

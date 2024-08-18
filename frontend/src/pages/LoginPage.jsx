@@ -34,11 +34,11 @@ const LoginPage = () => {
     <>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <div className="container mx-auto p-4 mt-[15vh] w-1/2">
-          <h1 className="text-2xl font-bold">Login Page</h1>
+        {/* <div className="container mx-auto p-4 mt-[15vh] w-1/2"> */}
+          {/* <h1 className="text-2xl font-bold">Login Page</h1> */}
           {error && <p className="text-black-bold">{error}</p>}
           <LoginForm onLogin={handleLogin} />
-        </div>
+        {/* </div> */}
       </div>
     </>
   );
