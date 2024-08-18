@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* a {
+    @apply underline text-white hover:text-blue-800 visited:text-black
+ } */
