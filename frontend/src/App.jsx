@@ -7,6 +7,7 @@ import Login from "./pages/LoginPage";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomeSection1 from "./components/HomeSection1";
 
 // import Clients from "./components/Clients";
 // import Hero from "./components/Hero";
@@ -26,6 +27,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/header" element={<Header />} />
       <Route path="/footer" element={<Footer />} />
+      <Route path="/home/section1" element={<HomeSection1 />} />
     </Routes>
   );
 
