@@ -3,25 +3,27 @@ import "./HomeSection1.css";
 
 const HomeSection1 = () => {
   return (
-    <main className="flex-grow p-8">
-      <h2 className="text-3xl font-bold mb-4">
+    <div className="section-1 flex-grow mt-[-30vh]">
+      <h2 className="absolute text-6xl font-ligth text-left pl-[10vw] z-10">
         Welcome to{" "}
-        <span style={{ fontFamily: "Ribeye Marrow" }}>Serendipity</span>
+        <br></br>
+        <span className="ml-20" style={{ fontFamily: "Ribeye Marrow" }}>Serendipity</span>
       </h2>
-      <p className="text-lg">
+      {/* <p className="text-lg text-gray">
         Discover a world of books at your fingertips. Explore our vast
         collection and find your next favorite read.
-      </p>
+      </p> */}
 
-      <div className="flex flex-row">
-        <div className="w-[50vw] p-5">
-          <p className="text-right">
+      <div className="flex flex-row mt-[0] text-gray">
+        <div className="w-[100%] pt-[10%] mt-[15%] ">
+          <p className="text-center text-3xl mx-[20%]">
             A house to millions of digital and non-digital books from around the
             world
           </p>
 
-          <div className="mt-8">
-            <div className="relative my-5 rounded-md shadow-sm flex items-center">
+          <div className="mt-8 px-[20%]">
+
+            <div className="relative my-5 rounded-md shadow-sm flex items-center mb-10">
               <input
                 type="text"
                 name="title"
@@ -33,6 +35,7 @@ const HomeSection1 = () => {
                 <div className="btn btn-primary">Search</div>
               </div>
             </div>
+
             <div className="relative mb-6">
               <label
                 htmlFor="author"
@@ -45,7 +48,7 @@ const HomeSection1 = () => {
                 id="author"
                 name="author"
                 placeholder="The Author"
-                className="block w-full border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-dotted placeholder-transparent"
+                className="block w-full border-0 border-b-2 border-gray-300 bg-transparent py-1 px-0 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-dotted placeholder-transparent"
               />
             </div>
 
@@ -61,14 +64,14 @@ const HomeSection1 = () => {
                 id="year"
                 name="year"
                 placeholder="Year"
-                className="block w-full border-0 border-b-2 border-gray-300 bg-transparent py-2 px-0 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-dotted placeholder-transparent"
+                className="block w-full border-0 border-b-2 border-gray-300 bg-transparent py-1 px-0 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-dotted placeholder-transparent"
               />
             </div>
           </div>
         </div>
-        <div className="section1-image w-[50vw] h-[90vh]"></div>
+        <div className="section1-image w-[100%] h-[90vh]"></div>
       </div>
-    </main>
+    </div>
   );
 };
 

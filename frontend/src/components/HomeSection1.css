@@ -1,6 +1,14 @@
+.section-1 {
+  background-color: rgba(211, 211, 211, 0.267);
+}
+
 .section1-image {
   background-image: url("../assets/img/Homeimage.svg");
-  background-size: 80%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+}
+
+.text-gray {
+  color: #5C5C5C;
 }

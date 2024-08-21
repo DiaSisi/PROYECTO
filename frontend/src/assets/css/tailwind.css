@@ -11,6 +11,10 @@
     @apply font-semibold py-2 px-6 text-white rounded-2xl bg-gradient-to-l from-[#ffe3f9] to-[#7900b9]
  }
 
+ .secondary {
+   color: #360153
+ }
+
  /* header {
     margin: 0 auto;
  } */
