@@ -3,7 +3,7 @@ import "./HomeSection2.css";
 
 const HomeSection2 = () => {
   return (
-    <div className="best px-[10vw] h-[50vh]"></div>
+    <div className="best px-[0vw] h-[60vh] "></div>
   );
 };
 
