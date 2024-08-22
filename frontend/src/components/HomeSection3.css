@@ -1,0 +1,3 @@
+.card-book {
+    @apply flex flex-col justify-center items-center w-auto h-auto gap-5 p-5 rounded-lg md:flex-row
+}
